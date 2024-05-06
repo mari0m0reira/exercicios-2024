@@ -1,35 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-*{
-    margin-left: 0px;
-}
 
 body{
+    margin-top: 0px;
     margin-left: 0px;
 }
+
 .sidebar {
-    background-color: white;
-    box-shadow: 3px 0 5px 0 #e7e7e7;
-    position: sticky;
-    width: 220px;
-    height: 1701px;
-    margin-top: 0px;      
-    margin-left: 0px;
-}
-
-.no-margin-left {
-}
-
-.itens {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 220px;
+    height: 1701px;    
     
 }
 
-.item{
-    
+#slaca-2019{            
+    align-items: center;   
+    display: flex;      
+    width: 100%;
+    height: 68px;
+    background-image: linear-gradient(to bottom, rgba(255, 179, 84, 1), rgba(238, 122, 58, 1));
+}
+
+#texto-slaca-2019{  
+    font-family: "Roboto", sans-serif;    
+    font-size: 30px;
+    font-weight: 70;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 20px;
+     
+}
+
+#logo-sidebar{
+    padding-top: 5px;
+    width: 100%;
+
+}
+
+
+.itens {    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.item{    
     margin-left: -40px;
-    background-color: rgba(253, 241, 235, 1);
     padding-top: 14px;
     padding-left: 30px;
     font-family: "Quicksand", sans-serif;
@@ -41,7 +60,28 @@ body{
     text-decoration: none;
     height: 34px;
     align-items: center;  
-    border-bottom: 2px solid rgba(231, 231, 231, 1);
-    
+    border-bottom: 2px solid rgba(231, 231, 231, 1);    
 }   
+
+.item-selecionado{
+    background: 
+    linear-gradient(to bottom, rgba(255, 180, 85, 1), rgba(237, 120, 57, 1)), /* Gradiente de cima para baixo no fundo */
+    linear-gradient(to bottom, rgba(253, 241, 235, 1) 100%, transparent 100%); /* Gradiente de cima para baixo de 5px na esquerda */
+    background-position: left top, left top; /* Posiciona os gradientes */
+    background-size: 5px 100%, auto; /* Tamanho dos gradientes */
+    background-repeat: no-repeat; /* Evita a repetição dos gradientes */
+}
+
+
+.item:hover{    
+    background: 
+        linear-gradient(to bottom, rgba(255, 180, 85, 1), rgba(237, 120, 57, 1)), /* Gradiente de cima para baixo no fundo */
+        linear-gradient(to bottom, rgba(253, 241, 235, 1) 100%, transparent 100%); /* Gradiente de cima para baixo de 5px na esquerda */
+    background-position: left top, left top; /* Posiciona os gradientes */
+    background-size: 5px 100%, auto; /* Tamanho dos gradientes */
+    background-repeat: no-repeat; /* Evita a repetição dos gradientes */
+}
+
+
+
 
