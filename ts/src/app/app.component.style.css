@@ -2,11 +2,15 @@
 
 :root{
     --pessego: rgba(253, 241, 235, 1);
+    --cenoura: rgba(237, 120, 57, 1);
 }
+
 body{
     margin: 0px;
     width: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -19,6 +23,7 @@ body{
 }
 
 .sidebar {
+    position: fixed;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -94,8 +99,9 @@ body{
 
 .content-page{
     width: 100%;
+    margin-left: 220px;
 }
-.header {    
+.header {       
     display: flex;
     align-items: center;
     background-color: var(--pessego);
@@ -108,6 +114,7 @@ body{
     margin-right: auto;
 }
 
+
 .text-header-little {
     font-family: "Roboto", sans-serif;   
     font-size: 14px;
@@ -118,9 +125,15 @@ body{
     margin: auto;
     height: 16px;
     top: 5px;
-    left: 36px;
-
+    left: 36px;    
+    width: 100%;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    text-overflow: ellipsis; /* Mostra reticências (...) para indicar que o texto foi truncado */
+    max-width: 100%; /* Define a largura máxima do texto */
 }
+
+
 
 .text-header-big{
     font-family: "Roboto", sans-serif;   
@@ -134,8 +147,11 @@ body{
     height: 26px;
     top: 23px;
     left: 36px;
-
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    text-overflow: ellipsis; /* Mostra reticências (...) para indicar que o texto foi truncado */
 }
+
 
 .language {    
     height: 100%;
@@ -152,12 +168,12 @@ body{
     text-align: left;
     color: rgba(51, 51, 51, 1);
 
-    border: 1px solid rgba(204, 204, 204, 1); /* Borda preta de 1px */
+    border: 1px solid rgba(204, 204, 204, 1); 
     padding: 8px 14px; 
-    display: inline-block; /* Permite que a borda envolva o texto */
+    display: inline-block;
     border-radius: 3px;
 
-
+    white-space: nowrap;
 
 }
 
@@ -198,14 +214,23 @@ body{
     line-height: 15px;
 }
 .content-photo {
-    position: absolute;
     right: 36px; 
+    align-items: center;
+    margin-left: 10px;
 }
 
+.photo {
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 15px;
+
+
+}
 .badge {
-    position: absolute;
-    top: -3px;
-    right: -3px;
+    position: relative;
+    top: -35px;
+    right: -20px;
     background-color: rgba(248, 89, 89, 1);
     color: white;
     border-radius: 50%;
@@ -221,17 +246,16 @@ body{
 
   }
 
-.photo {
-    height: 30px;
-    border-radius: 50%;
 
-}
 
-#main {
-    background-color: gray;
+.main {
+    background-color: white;
     margin-left: 800;
     height: 1701px;
     width: 100%;
+    padding-top: 20px;
+    padding-left: 43px;
+    padding-bottom: 50px;
 }
 
 
@@ -242,5 +266,10 @@ h1, h2 {
 p{
     align-items: center;
     margin: auto;
+}
+
+.cinza{
+    background-color: rgb(241, 241, 241);
+    height: max-content;
 }
 
