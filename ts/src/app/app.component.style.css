@@ -3,6 +3,8 @@
 :root{
     --pessego: rgba(253, 241, 235, 1);
     --cenoura: rgba(237, 120, 57, 1);
+    --roboto: "Roboto", sans-serif;   
+    --quicksand: "Quicksand", sans-serif;
 }
 
 body{
@@ -10,7 +12,6 @@ body{
     width: 100%;
     overflow-x: hidden;
     display: flex;
-    flex-direction: column;
 
 }
 
@@ -30,7 +31,6 @@ body{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     width: 220px;
     height: 1701px; 
-    padding-top: 
 }
 
 #slaca-2019{            
@@ -44,7 +44,7 @@ body{
     display: block;
     text-align: center;
     align-self: center;  
-    font-family: "Roboto", sans-serif;    
+    font-family: var(--roboto) ; 
     font-size: 30px;
     font-weight: 70;
     color: rgba(255, 255, 255, 1);  
@@ -65,17 +65,17 @@ body{
 
 .item{    
     margin-left: -40px;
-    padding-top: 14px;    
-    font-family: "Quicksand", sans-serif;
+    padding: 9px 0px 9px 0px;
+    margin-top: 0px 0px 0px 0px 0px;   
+    font-family: var(--quicksand);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 590;
     line-height: 18.75px;
     text-indent: 24px;
     color: rgba(114, 92, 92, 1);
     text-decoration: none;
-    height: 34px;
     align-items: center;  
-    border-bottom: 2px solid rgba(231, 231, 231, 1);    
+    border-bottom: 1px solid rgba(231, 231, 231, 1);    
 }   
 
 
@@ -116,7 +116,7 @@ body{
 
 
 .text-header-little {
-    font-family: "Roboto", sans-serif;   
+    font-family: var(--roboto);
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
@@ -136,7 +136,7 @@ body{
 
 
 .text-header-big{
-    font-family: "Roboto", sans-serif;   
+    font-family: var(--roboto);
     font-size: 22px;
     font-weight: 400;
     line-height: 25.78px;
@@ -154,31 +154,32 @@ body{
 
 
 .language {    
-    height: 100%;
     display: fixed;
     align-items: center;
+    padding: 0px;
     
 }
 
 .pt-br {
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--quicksand);
     font-size: 14px;
     font-weight: 400;
     line-height: 17.5px;
     text-align: left;
     color: rgba(51, 51, 51, 1);
-
     border: 1px solid rgba(204, 204, 204, 1); 
     padding: 8px 14px; 
     display: inline-block;
     border-radius: 3px;
-
     white-space: nowrap;
+    
 
 }
 
 .pt-br::before {
-    content: "\f0ac\0020 ";
+    /* content: url('../assets/globo.jpg'); */
+    background-size: contain;
+    
 }
 .pt-br::after {
     content: "\0020 \25BC";
@@ -200,7 +201,7 @@ body{
 
 
 .text-welcome {
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--quicksand);
     font-size: 14px;
     font-weight: 400;
     line-height: 17.5px;
@@ -208,7 +209,7 @@ body{
 }
 
 .text-email{
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--quicksand);
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
@@ -268,8 +269,160 @@ p{
     margin: auto;
 }
 
+.apresentation {
+    display: flex;
+    flex-direction: row;
+    height: 512px;
+    margin-right: 19px;
+}
+
+.left-apresentation{    
+    width: 784px;
+    background-color:bisque;
+}
+
+.cabecalho{
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;    
+    color: var(--cenoura);
+    height: 54px;
+    background-color: aqua;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    text-overflow: ellipsis; /* Mostra reticências (...) para indicar que o texto foi truncado */
+    max-width: 100%; /* Define a largura máxima do texto */
+    margin-bottom: 19px;
+
+}
+
+/* div.video{
+	background-color: var(--cor5);
+	margin: Opx 0px 0px 0px;
+	position: relative; 
+    border-radius: 3px;	
+    height: 73%;
+}
+
+div.video > iframe{
+	position: relative;
+	width: 100%;
+	height: 100%; 		
+} */
+
+.thumb {
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+}
+.right-apresentation{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 242px;
+    height: 100%;
+    top: 73px;
+    left: 816px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin-left: 30px;
+
+}
+
+.header-detalhes{
+    background-color: yellow;
+    width: 242px;
+    height: 73px;
+    display: flex;
+    
+}
+
+.header-detalhes-top {
+    display: flex;
+    height: 31px;
+}
+
+.download {
+    width: 120px;
+    height: 31px;
+    left: 842px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 4px;
+    background-color: var(--cenoura);
+    display: flex;
+    margin-right: 5px;
+
+}
+
+.download>p {
+    font-family: var(--roboto);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+
+    color: white;
+    width: 72px;
+    height: 19px;
+    top: 6px;
+    left: 36px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.star{
+    background-color: var(--cenoura);
+    width: 26px;
+    height: 31px;
+    left: 967px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 4px ;    
+    margin-right: 5px;
+    text-align: center;
+}
+
+.doi{        
+    background-color: var(--cenoura);
+    font-family: var(--roboto);
+    width: 43px;
+    height: 31px;
+    left: 1015px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+.altura-imagem {
+    height: 100%;
+}
+.como-citar {
+    font-family: var(--roboto);
+    font-size: 12px;
+    font-weight: 590;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: var(--cenoura);
+    margin-top: 43px;
+}
+
+.detalhes{
+    background-color: aquamarine;
+    width: 242px;
+    height: 439px;
+    border-radius: 3px;
+    top: 73px;
+    border: 1px 0px 0px 0px;
+}
+
 .cinza{
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(44, 43, 43);
     height: max-content;
 }
 
