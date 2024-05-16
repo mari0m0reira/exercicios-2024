@@ -5,17 +5,21 @@
     --cenoura: rgba(237, 120, 57, 1);
     --cinza: rgba(236, 236, 236, 1);
     --black: rgba(92, 92, 92, 1);
+    
     --strong-black: rgba(78, 78, 78, 1);
     --cinza-claro: rgb(173, 160, 160);
-    
+    --cinza-escuro: rgb(89, 89, 89);
+    --marrom-claro: rgb(117, 117, 117);
+    --marron-escuro: rgb(92, 92, 92);
+
     --roboto: "Roboto", sans-serif;   
     --quicksand: "Quicksand", sans-serif;
+    
 }
 
-position: fixed;
 body{
     margin: 0px;
-    width: 100%;
+    width: 100vh;
     display: flex;
 
 }
@@ -103,7 +107,7 @@ body{
 }
 
 .content-page{
-    width: 100%;
+    width: 1070px;
     margin-left: 220px;
 }
 .header {       
@@ -469,6 +473,9 @@ div.video > iframe{
     outline: 2px solid var(--cinza);   
 }
 
+.margin-bottom{
+    margin-bottom: 15px;
+}
 .largura-conteudo{
     width: 1055px;
 }
@@ -479,8 +486,11 @@ div.video > iframe{
 
 .resumo-padding{
     padding: 15px;    
-    text-align: justify;
-    
+       
+}
+
+.resumo-alinhamento{
+    text-align: justify; 
 }
 
 #resto-conteudo{
@@ -493,13 +503,155 @@ div.video > iframe{
     font-size: 14px;
     font-weight: 400;
     line-height: 22.75px;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;   
+    cursor: pointer; 
 }
-
-
 
 #ver-mais{
     color: var(--cenoura);    
     font-weight: 900;
+}
+
+.compartilhe{
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+
+
+    color: var(--cenoura);
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.largura-discussoes{    
+    width: 1025px;
+}
+
+.tres-imagens{
+    text-align: center;
+}
+
+.tamanho-imagens{
+    height: 48.94px; 
+    margin-right: 51.74px;
+    margin-bottom: 35.06px;
+}
+
+.sabia{
+    font-family: var(--quicksand);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.25px;
+    text-align: center;
+    width: 626px;
+    margin-bottom: 14px;
+    color: var(--cinza-escuro);
+}
+
+.risco-horizontal {
+    width: 100%;
+    height: 1px; /* Define a altura do risco como 1 pixel */
+    background-color: var(--cinza);
+  }
+  
+.alinhamento-vertical{
+    align-items: center;
+  }
+
+.criar{
+    margin-right: 5px;
+}
+#btnCriarTopico{
+    display: flex;
+    font-family: var(--quicksand);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    white-space: nowrap;
+
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(255, 179, 84, 1), rgba(240, 129, 61, 1));
+    padding: 9px 15px 9px 15px;    
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    margin-bottom: 15px;
+    cursor:pointer;
+
+}
+
+btnCriarTopico::before{
+    content: url('../assets/icon\ -\ criar.jpg')
+}
+
+.assunto-padding{
+    padding: 17px 23.17px 18px 24px;
+}
+
+.assunto-shadow{
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.assunto-largura{
+    width: 980px;
+}
+
+.assunto-margin-botton{
+    margin-bottom: 17px;
+}
+.assunto-footer{
+    display: inline-flex;
+    align-items: center;
+}
+
+.assunto-header{
+    font-family: var(--quicksand);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: var(--cenoura);    
+    margin-bottom: 5px;    
+}
+
+.assunto-nome-autor{    
+    font-family: var(--quicksand);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+
+    color: var(--marrom-escuro);
+    margin-bottom: 10px;
+
+}
+
+.assunto-comentario{
+    font-family: var(--quicksand);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: left;
+
+    margin-bottom: 11px;
+}
+
+.assunto-like-resposta{
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 18.62px;
+    color: var(--marrom-claro);
+    margin-right: 15px;
+}
+
+.favoritar{
+    height: 19px;
+    margin-right: 15px;
+}
+
+.mais-informacoes{
+    height: 18px;
+    margin-right: 15px;
 }

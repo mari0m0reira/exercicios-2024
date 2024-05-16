@@ -3,6 +3,9 @@ function vermais(){
     let btnVermais = document.getElementById("btnVerMais");
     let mais = document.getElementById("ver-mais");
 
+    restoConteudo.style.transitionDuration = "2s";
+    mais.style.transitionDuration = "2s";
+    btnVermais.style.transitionDuration = "2s";
   
     if(restoConteudo.style.display == "inline"){
         restoConteudo.style.display="none";
