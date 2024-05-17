@@ -135,50 +135,146 @@
           <div class="discussoes header-detalhes largura-conteudo">
             <p class="texto-detalhes">Discussões</p>
           </div>
+          <!-- corpo discussoes -->
           <div class="bordas largura-discussoes resumo-padding">
+
             <div class="margin-botton">
-              <p class="compartilhe">Compartilhe suas ideias ou dúvidas com os autores!</p>
-              <div class="tres-imagens">
-                <img class="tamanho-imagens" src="../assets/icone1.jpg" alt="Duvidas">
-                <img class="tamanho-imagens" src="../assets/icone2.jpg" alt="Compartilhamento">
-                <img class="tamanho-imagens" src="../assets/icone3.jpg" alt="Idéias">
+              <!-- aqui comeca "Compartilhe suas ideias" -->
+              <div id="compatilhe-suas-ideias">
+                <p class="compartilhe">Compartilhe suas ideias ou dúvidas com os autores!</p>
+                <div class="tres-imagens">
+                  <img class="tamanho-imagens" src="../assets/icone1.jpg" alt="Duvidas">
+                  <img class="tamanho-imagens" src="../assets/icone2.jpg" alt="Compartilhamento">
+                  <img class="tamanho-imagens" src="../assets/icone3.jpg" alt="Idéias">
+                </div>
+                <p class="sabia">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                <div class="flex alinhamento-vertical">
+                  <div class="risco-horizontal"></div>
+                    <a onclick="criarTopico()" class="btn-create-topic">criar tópico</a>
+                  <div class="risco-horizontal"></div>
+                </div>
               </div>
-              <p class="sabia">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-              <div class="flex alinhamento-vertical">
-                <div class="risco-horizontal"></div>
-                  <a onclick="criarTopico()" class="btn-create-topic">criar tópico</a>
-                <div class="risco-horizontal"></div>
+              <!-- aqui acaba "Compartilhe suas ideias" -->
+
+              <!-- aqui começa "Duvidas e sugestoes" -->
+              <div id="duvidas-e-sugestoes">
+                <p class="sabia">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                <p class="format-discus">Assunto</p>
+                <input class="input-assunto" type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+                <p class="format-discus">Conteúdo</p>
+                <input class="input-conteudo" type="text">
+                <div class="enviar">
+                  <div class="preenchimento-enviar"></div>
+                  <a onclick="enviarTopico()" class="bnt-enviar">Enviar</a>
+                </div>
               </div>
+              <!-- aqui termina Duvidas e sugestoes -->
+
+              <!-- aqui começa "Seu topico foi enviado com sucesso"! -->
+              <div id="seu-topico">
+                <p class="compartilhe">Seu tópico foi enviado com sucesso! :D</p>              
+                <p class="text-topic-send">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                <p class="text-descubra">Descubra outros trabalhos!</p>
+                <div class="flex alinhamento-vertical">
+                  <div class="risco-horizontal"></div>
+                  <a onclick="criarNovoTopico()" class="btn-create-new-topic">criar novo tópico</a>
+                  <div class="risco-horizontal"></div>
+                </div>
+                <div class="back-gray">              
+
+                  <div class="aguardando assunto-shadow  assunto-margin-botton">
+                    <img class="ok-altura" src="../assets/ok.png" alt="ok">
+                    <div class="box-aguardando">
+                      <p class="text-aguardando">Aguardando feedback dos autores</p>
+                    </div>
+                    <div class="box-editar">
+                      <p class="text-editar-topico">Editar tópico</p>
+                    </div>
+                  </div>
+
+                  <div class="ajuste-posicao assunto-largura assunto-shadow assunto-padding assunto-margin-botton">
+                    <p class="assunto-header">Assunto da pergunta aparece aqui</p>
+                    <p class="assunto-nome-autor">Carlos Henrique Santos</p>
+                    <p class="assunto-comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                    <div class="assunto-footer">
+                      <img class="mais-informacoes" src="../assets/mais informações.jpg" 
+                      alt="mais informações">
+                      <img class="favoritar" src="../assets/favoritar.jpg" alt="favoritar">
+                      <p class="assunto-like-resposta">1 like</p>
+                      <p class="assunto-like-resposta">1 resposta</p>
+                    </div>
+                  </div>
+  
+                  
+                  
+                </div>
+              </div>     
+              <!-- aqui termina "Seu topico foi enviado com sucesso"! -->
 
             </div>
+
             <div class="assunto-largura assunto-shadow assunto-padding assunto-margin-botton">
-              <p class="assunto-header">Assunto da pergunta aparece aqui</p>
+              <p class="ops-topic-subject">Assunto da pergunta aparece aqui</p>
               <p class="assunto-nome-autor">Carlos Henrique Santos</p>
               <p class="assunto-comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
               <div class="assunto-footer">
-                <img class="mais-informacoes" src="../assets/mais informações.jpg" 
+                <img class="mais-informacoes" src="../assets/mais informações.jpg"
                 alt="mais informações">
                 <img class="favoritar" src="../assets/favoritar.jpg" alt="favoritar">
                 <p class="assunto-like-resposta">1 like</p>
                 <p class="assunto-like-resposta">1 resposta</p>
               </div>
             </div>
-            
-            <div class="assunto-largura assunto-shadow assunto-padding">
-              <p class="assunto-header">Assunto da pergunta aparece aqui</p>
-              <p class="assunto-nome-autor">Carlos Henrique Santos</p>
-              <p class="assunto-comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-              <div class="assunto-footer">
-                <img class="mais-informacoes" src="../assets/mais informações.jpg" 
-                alt="mais informações">
-                <img class="favoritar" src="../assets/favoritar.jpg" alt="favoritar">
-                <p class="assunto-like-resposta">1 like</p>
-                <p class="assunto-like-resposta">1 resposta</p>
+            <a onclick="verRespostas()" class="answered-topic assunto-shadow bordas">
+              
+              <div class="bordas assunto-shadow">
+                <div class="assunto-largura  assunto-padding ">
+                  <p class="ops-topic-subject">Assunto da pergunta aparece aqui</p>
+                  <p class="assunto-nome-autor">Carlos Henrique Santos</p>
+                  <p class="assunto-comentario">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                  <div class="assunto-footer">
+                    <img class="mais-informacoes" src="../assets/mais informações.jpg"
+                    alt="mais informações">
+                    <img class="favoritar" src="../assets/favoritar.jpg" alt="favoritar">
+                    <p class="assunto-like-resposta">1 like</p>
+                    <p class="assunto-like-resposta">1 resposta</p>
+                  </div>
+                
+                </div>
+
+                <div id="answers">
+                  <div class="assunto-largura assunto-padding borda-top cinza-fundo">
+                    <div class="flex-autor">
+                      <p class="assunto-nome-autor">Adriano da silva</p>
+                      <p class="autor">Autor</p>
+                      <img class="ok-laranja" src="../assets/ok-laranja.png" alt="ok">
+                    </div>
+                    <p class="assunto-comentario">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                  </div>
+                  <div class="assunto-largura assunto-padding borda-top">
+                    <p class="assunto-nome-autor">Carlos Henrique Santos</p>
+                    <p class="assunto-comentario">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br><br>Obrigada pela resposta, muito interessante o seu trabalho!</p>
+                  </div>
+                  <div class="assunto-largura assunto-padding borda-top cinza-fundo">
+                    <p class="assunto-nome-autor">Carmila Ferreira Andrade</p>
+                    <p class="assunto-comentario">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. <br><br>Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                    </p>
+                  </div>
+                  <div class="assunto-largura assunto-padding borda-top cinza-fundo">
+                    <p class="assunto-nome-autor">Ana Carolina</p >
+                    <p class="assunto-comentario">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                  </div>
+                </div>
+
+
               </div>
-            </div>
+            </a>
+
           </div>
+
         </div>
-        
+         <!-- corpo discussoes -->
+         
       </main>
       <footer>
         <div >

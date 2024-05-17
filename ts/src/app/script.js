@@ -12,4 +12,40 @@ function vermais(){
         restoConteudo.style.display="inline";        
         mais.style.display="none";
     }
-  }
+}
+
+function criarTopico(){
+    let compatilheIdeias = document.getElementById("compatilhe-suas-ideias");
+    let duvidasSugestoes = document.getElementById("duvidas-e-sugestoes");
+    let seuTopico = document.getElementById("seu-topico");
+
+    compatilheIdeias.style.display ="none";
+    duvidasSugestoes.style.display="inline";
+    seuTopico.style.display="none";
+}
+
+function enviarTopico(){
+    let compatilheIdeias = document.getElementById("compatilhe-suas-ideias");
+    let duvidasSugestoes = document.getElementById("duvidas-e-sugestoes");
+    let seuTopico = document.getElementById("seu-topico");
+
+    compatilheIdeias.style.display ="none";
+    duvidasSugestoes.style.display="none";
+    seuTopico.style.display="inline";
+}
+
+function criarNovoTopico(){
+    let compatilheIdeias = document.getElementById("compatilhe-suas-ideias");
+    let duvidasSugestoes = document.getElementById("duvidas-e-sugestoes");
+    let seuTopico = document.getElementById("seu-topico");
+
+    compatilheIdeias.style.display ="none";
+    duvidasSugestoes.style.display="inline";
+    seuTopico.style.display="none";
+}
+
+function verRespostas(){
+    let respostas = document.getElementById("answers");
+
+    answers.style.display ="inline";
+}
