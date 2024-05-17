@@ -261,7 +261,7 @@ body{
 .main {
     background-color: white;
     margin-left: 800;
-    height: 1701px;
+    /* height: 1701px; */
     width: 100%;
     padding-top: 20px;
     padding-left: 43px;
@@ -290,23 +290,27 @@ p{
     width: 784px;
 }
 
-.cabecalho{
-    font-family: var(--roboto);
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-    text-align: left;    
-    color: var(--cenoura);
+.cabecalho{        
+    width: 786px;
     height: 54px;
-    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
-    overflow: hidden; /* Esconde qualquer conteúdo excedente */
-    text-overflow: ellipsis; /* Mostra reticências (...) para indicar que o texto foi truncado */
-    max-width: 100%; /* Define a largura máxima do texto */
     margin-bottom: 19px;
+    max-width: 100%; /* Define a largura máxima do texto */
+    
 
 }
 
+.font-cabecalho{
+    font-family: var(--roboto);
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 25px;
+    text-align: left;    
+    color: var(--cenoura);
+
+    
+
+    margin-top: 0px;
+}
 /* div.video{
 	background-color: var(--cor5);
 	margin: Opx 0px 0px 0px;
@@ -498,7 +502,7 @@ div.video > iframe{
 }
 
 
-#btnVerMais{
+.btn-show-more{
     font-family: var(--quicksand);
     font-size: 14px;
     font-weight: 400;
@@ -506,6 +510,8 @@ div.video > iframe{
     letter-spacing: 0.02em;   
     cursor: pointer; 
 }
+
+
 
 #ver-mais{
     color: var(--cenoura);    
@@ -562,7 +568,7 @@ div.video > iframe{
 .criar{
     margin-right: 5px;
 }
-#btnCriarTopico{
+.btn-create-topic{
     display: flex;
     font-family: var(--quicksand);
     font-size: 15px;
@@ -581,8 +587,9 @@ div.video > iframe{
 
 }
 
-btnCriarTopico::before{
-    content: url('../assets/icon\ -\ criar.jpg')
+.btn-create-topic::before{
+    content: url('../assets/icon\ -\ criar.png');    
+    margin-right: 5px;
 }
 
 .assunto-padding{
@@ -654,4 +661,10 @@ btnCriarTopico::before{
 .mais-informacoes{
     height: 18px;
     margin-right: 15px;
+}
+
+
+.footer{
+    width: 1146px;
+    height: 181px;
 }
