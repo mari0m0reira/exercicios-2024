@@ -46,6 +46,16 @@ function criarNovoTopico(){
 
 function verRespostas(){
     let respostas = document.getElementById("answers");
+    let tresPontos = document.getElementById("tres=pontos");
+    let restoDiscucao = document.getElementById("resto-discussao");
 
-    answers.style.display ="inline";
+    if(restoDiscucao.style.display == "none"){
+        answers.style.display ="inline";
+        restoDiscucao.style.display ="inline";
+        tresPontos.style.display="none";
+    }else{
+        answers.style.display ="none";
+        restoDiscucao.style.display ="none";
+        tresPontos.style.display="inline";
+    }
 }

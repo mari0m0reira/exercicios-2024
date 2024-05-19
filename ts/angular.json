@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": ["src/script.js"]
+            "scripts": [
+              "src/app/script.js"
+            ]
           },
           "configurations": {
             "production": {
