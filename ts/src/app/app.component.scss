@@ -30,16 +30,15 @@ body{
 
 }
 
-a {
-    color: inherit; /* Inherit a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado */
+button{
+  border: none;
 }
 
 .flex {
     display: flex;
     margin-top: 0px; 
-    width: 100%;  
-    max-width: 100%;
+    // width: 100%;  
+    /* max-width: 100%; */
 }
 
 .flex-autor{
@@ -628,12 +627,27 @@ div.video > iframe{
     margin-bottom: 14px;
     color: var(--cinza-escuro);  
     margin: auto;
+    margin-bottom: 14px;
+}
+
+.tem-duvida{
+    font-family: var(--quicksand);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.25px;
+    text-align: center;    
+    width: 626px;
+    margin-bottom: 14px;
+    color: var(--cinza-escuro);  
+    margin: auto;
 }
 
 .risco-horizontal {
+    display: block;
     width: 100%;
     height: 1px; /* Define a altura do risco como 1 pixel */
     background-color: var(--cinza);
+    margin-bottom: 15px;
   }
   
 .alinhamento-vertical{
@@ -643,6 +657,15 @@ div.video > iframe{
 .criar{
     margin-right: 5px;
 }
+
+// #create-topic{
+//     margin-top: 0px;
+// }
+
+#compatilhe-suas-ideias{
+    display: inline;
+}
+
 .btn-create-topic{
     display: flex;
     font-family: var(--quicksand);
@@ -659,10 +682,10 @@ div.video > iframe{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
     margin-bottom: 15px;
     cursor:pointer;
-    margin-top: 13px;
+    margin-top: 0px;
 }
 
-.btn-create-topic::before{
+.create-topic::before{
     content: url('../assets/icon\ -\ criar.png');    
     margin-right: 5px;
 }
@@ -692,7 +715,7 @@ input{
     border-radius: 4px;
 }
 
-.input-assunto{
+.subject{
     height: 39px;
 }
 .input-conteudo{
@@ -703,20 +726,27 @@ input{
 .enviar{  
     display: flex;  
     justify-content: center;
-    width: 1027.20px;
+    width: 1027.7px;
+    align-items: center;
+    /* width: 100%; */
+    /* width: 10270.20px; */
 }
 
 .preenchimento-enviar{
+    display: none;
     background-color: var(--cinza-enviar);
-    width: 820.42px;
+    width: 1820.42px; 
+    // width: 100%;
     height: 31px;
     border: 1px  solid var(--cinza-input);
     border-radius: 0px 0px 0px 4px;
 }
 
+.zero-largura{
+    width: 0px;
+}
 
-
-.bnt-enviar{
+.btn-enviar{
     justify-content: center;
     align-items: center;
     width: 206.1px;
@@ -732,7 +762,8 @@ input{
     background-image: linear-gradient(to bottom, rgba(255, 179, 84, 1), rgba(240, 129, 61, 1));
     border-radius: 0px 0px 4px 0px ;
     margin-bottom: 15px;
-    cursor:pointer;
+    cursor:pointer;    
+    box-shadow: none;
 }
 
 .text-topic-send{
@@ -757,6 +788,7 @@ input{
     text-align: center;
     color: var(--cenoura);
     text-decoration: underline;
+    margin-bottom: 30px;
 }
 .btn-create-new-topic{
     align-items: center;
@@ -769,7 +801,6 @@ input{
     line-height: 16px;
     text-align: center;
     white-space: nowrap;
-
     color: white;
     background-image: linear-gradient(to bottom, rgba(255, 179, 84, 1), rgba(240, 129, 61, 1));
     border-radius: 4px;
@@ -782,9 +813,10 @@ input{
 }
 
 
-.back-gray{    
+#back-gray{    
     /* width: 1028px; */
     /* height: 152.41px; */
+    display: none;
     width: 100%; 
     height: 100%;
     /* border: 2px solid black; */
@@ -847,7 +879,7 @@ input{
 
 
 #duvidas-e-sugestoes{
-    display: none;
+     display: none;
 }
 
 #seu-topico{

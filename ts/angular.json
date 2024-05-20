@@ -98,8 +98,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/app/app.component.style.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }

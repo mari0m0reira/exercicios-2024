@@ -151,25 +151,19 @@
                   <img class="tamanho-imagens" src="../assets/icone3.jpg" alt="Idéias">
                 </div>
                 <p class="sabia">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                <div class="flex alinhamento-vertical">
-                  <div class="risco-horizontal"></div>
-                    <a onclick="criarTopico()" class="btn-create-topic">criar tópico</a>
-                  <div class="risco-horizontal"></div>
-                </div>
               </div>
               <!-- aqui acaba "Compartilhe suas ideias" -->
 
               <!-- aqui começa "Duvidas e sugestoes" -->
               <div id="duvidas-e-sugestoes">
-                <p class="sabia">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-                <p class="format-discus">Assunto</p>
-                <input class="input-assunto" type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
-                <p class="format-discus">Conteúdo</p>
-                <input class="input-conteudo" type="text">
-                <div class="enviar">
-                  <div class="preenchimento-enviar"></div>
-                  <a onclick="enviarTopico()" class="bnt-enviar">Enviar</a>
-                </div>
+                <form action="none">
+                  <p class="tem-duvida">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                  <p class="format-discus">Assunto</p>
+                  <input class="subject" type="text" placeholder='Defina um tópico sucinto para notificar os autores...'>
+                  <p class="format-discus">Conteúdo</p>
+                  <input class="input-conteudo" type="text">
+                </form>
+                
               </div>
               <!-- aqui termina Duvidas e sugestoes -->
 
@@ -178,41 +172,45 @@
                 <p class="compartilhe">Seu tópico foi enviado com sucesso! :D</p>              
                 <p class="text-topic-send">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
                 <p class="text-descubra">Descubra outros trabalhos!</p>
-                <div class="flex alinhamento-vertical">
-                  <div class="risco-horizontal"></div>
-                  <a onclick="criarNovoTopico()" class="btn-create-new-topic">criar novo tópico</a>
-                  <div class="risco-horizontal"></div>
-                </div>
-                <div class="back-gray">              
-
-                  <div class="aguardando assunto-shadow  assunto-margin-botton">
-                    <img class="ok-altura" src="../assets/ok.png" alt="ok">
-                    <div class="box-aguardando">
-                      <p class="text-aguardando">Aguardando feedback dos autores</p>
-                    </div>
-                    <div class="box-editar">
-                      <p class="text-editar-topico">Editar tópico</p>
-                    </div>
-                  </div>
-
-                  <div class="ajuste-posicao assunto-largura assunto-shadow assunto-padding assunto-margin-botton">
-                    <p class="assunto-header">Assunto da pergunta aparece aqui</p>
-                    <p class="assunto-nome-autor">Carlos Henrique Santos</p>
-                    <p class="comments-container">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                    <div class="assunto-footer">
-                      <img class="mais-informacoes" src="../assets/mais informações.jpg" 
-                      alt="mais informações">
-                      <img class="favoritar" src="../assets/favoritar.jpg" alt="favoritar">
-                      <p class="assunto-like-resposta">1 like</p>
-                      <p class="assunto-like-resposta">1 resposta</p>
-                    </div>
-                  </div>
-  
-                  
-                  
-                </div>
+                
               </div>     
               <!-- aqui termina "Seu topico foi enviado com sucesso"! -->
+
+              <!-- botao -->              
+              <div id="formatacaoBotao" class="flex alinhamento-vertical">
+                <div id="risco-esquerda" class="risco-horizontal"></div>
+                <div class="preenchimento-enviar"></div>
+                <button onclick="criarTopico()" id="create-topic" class="btn-create-topic">criar tópico</button>
+                <div id="risco-direita" class="risco-horizontal"></div>
+              </div>
+              <!-- botao -->
+
+              <div id="back-gray">              
+
+                <div class="aguardando assunto-shadow  assunto-margin-botton">
+                  <img class="ok-altura" src="../assets/ok.png" alt="ok">
+                  <div class="box-aguardando">
+                    <p class="text-aguardando">Aguardando feedback dos autores</p>
+                  </div>
+                  <div class="box-editar">
+                    <p class="text-editar-topico">Editar tópico</p>
+                  </div>
+                </div>
+
+                <div class="ajuste-posicao assunto-largura assunto-shadow assunto-padding assunto-margin-botton">
+                  <p class="assunto-header">Assunto da pergunta aparece aqui</p>
+                  <p class="assunto-nome-autor">Carlos Henrique Santos</p>
+                  <p class="comments-container">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                  <div class="assunto-footer">
+                    <img class="mais-informacoes" src="../assets/mais informações.jpg" 
+                    alt="mais informações">
+                    <img class="favoritar" src="../assets/favoritar.jpg" alt="favoritar">
+                    <p class="assunto-like-resposta">1 like</p>
+                    <p class="assunto-like-resposta">1 resposta</p>
+                  </div>
+                </div>                
+                
+              </div>              
 
             </div>
 
