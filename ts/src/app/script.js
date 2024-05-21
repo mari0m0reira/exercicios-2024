@@ -48,7 +48,7 @@ function criarTopico(){
         btnCreateTopic.textContent = 'criar novo tópico';
         btnCreateTopic.classList.add('btn-create-new-topic');
 
-        style.innerHTML = '.create-topic::before { content: none; }';
+        style.innerHTML = '.btn-create-topic::before { content: none; }';
         document.head.appendChild(style);
 
         riscoDireita.style.display = "inline";
@@ -67,7 +67,7 @@ function criarTopico(){
         formatacaoBotao.classList.add('enviar');        
         btnCreateTopic.classList.add('btn-enviar');
 
-        style.innerHTML = '.create-topic::before { content: none; }';
+        style.innerHTML = '.btn-create-topic::before { content: none; }';
         document.head.appendChild(style);
 
         riscoDireita.style.display = "none";
@@ -83,7 +83,7 @@ function criarTopico(){
         formatacaoBotao.classList.add('enviar');
         btnCreateTopic.classList.add('btn-enviar');
         
-        style.innerHTML = '.create-topic::before { content: none; }';
+        style.innerHTML = '.btn-create-topic::before { content: none; }';
         document.head.appendChild(style);
 
         riscoDireita.style.display = "none";
